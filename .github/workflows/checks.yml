@@ -10,9 +10,9 @@ jobs: # здесь те задания которые гит будет выпо
   build: # просто имя джобы
     runs-on: ubuntu-latest # какая машина будет использоваться
     steps:
-      - uses: actions/checkout@v2 # скачиваем наш код на машину переход на рабочую область
+      - uses: actions/checkout@v3 # скачиваем наш код на машину переход на рабочую область
       - name: Instal python # имя шага
-        uses: actions/setup-python@v2 # install py
+        uses: actions/setup-python@v3 # install py
         with:
           python-version: 3.9
       - name: Instal deps # pip install -r requirements.txt
