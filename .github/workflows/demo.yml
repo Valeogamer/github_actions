@@ -6,3 +6,7 @@ jobs: # джоба, чувствителен к tab
     steps: # работа состоит из множества шагов после запуска машины
       - name: Print to console # вывод на консоль какой либо информации
         run: echo Hi, GitHub Actions and CI/CD! # допустим выведем привет
+      - name: Print a few lines
+        run: |
+          echo first line!
+          echo second line!
