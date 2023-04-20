@@ -1,4 +1,4 @@
-# git_hub_actions
+# github_actions
 
 ![gta](https://files.readme.io/28e7267-Continuous-Deployment-con-GitHub-Actions.png)
 
