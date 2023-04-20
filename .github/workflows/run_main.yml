@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Install python
-        uses: action/setup-python@v4
+        uses: actions/setup-python@v4
         with:
           python-version: 3.9
       - name: Install deps
@@ -23,4 +23,3 @@ jobs:
         run: |
           python main.py
           python mnist.py
-  
