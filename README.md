@@ -45,3 +45,7 @@ ____
 - [X] [UML для начинающих](https://www.youtube.com/watch?v=0I9aIP5gKCg&list=PLPPIc-4tm3YTw3FUu75jsW4QgrXopfXhX)
 - [X] [Что такое UML за 7 минут](https://www.youtube.com/watch?v=REr40AbD7U8)
 - [ ] [Полный Пайплайн (Pipeline) || Машинное Обучение](https://www.youtube.com/watch?v=PbLa9DDq-98&t=521s)
+
+#### Ограничения
+____
+[Git_resource](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions)
