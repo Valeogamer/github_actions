@@ -49,3 +49,7 @@ ____
 #### Ограничения
 ____
 [Git_resource](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions)
+
+#### UML
+____
+[UML инструмент](https://plantuml.com/ru/)
