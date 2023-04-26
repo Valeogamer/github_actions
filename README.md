@@ -35,7 +35,35 @@ jobs: # здесь те задания которые гит будет выпо
       - name: Run mypy
         run: mypy .
 ```
+#### Еще пример
+____
+```yml
+name: Code check
 
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+      - name: Install deps
+        run: |
+          python - m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Run main.py
+        run: |
+          python main.py
+          python mnist.py
+```
 #### Полезности
 ____
 - [X] [GitHub Actions](https://docs.github.com/ru/actions)
