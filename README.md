@@ -56,7 +56,9 @@ ____
 
 #### UML EXAMPLE
 ____
-> @startuml
+> [Запускать Туть](https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa70000)
+```puml
+@startuml
 skinparam componentStyle rectangle
 
 package "Fake News Detections" {
@@ -82,5 +84,5 @@ package "Fake News Detections" {
 }
 
 @enduml
-
+```
 
