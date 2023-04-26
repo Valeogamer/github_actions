@@ -1,0 +1,50 @@
+@startuml
+skinparam componentStyle rectangle
+
+package "Fake News Detections" {
+  
+  [Веб-интерфейс] as web
+  [Веб-сервер] as server
+  [Модуль обработки данных] as data
+  [Извлечение признаков] as data_0
+  [Фильтрация шума] as data_1
+  [Балансировка классов] as data_2
+  [Подбор гиперпараметров] as data_3
+  [Модуль Fake News Detections] as ml
+  [База данных] as db
+  [Модуль обработки NLP] as nlp
+  [Модуль визуализации] as vis
+  [Анализ тональности] as at
+  [Анализ синтаксиса] as asy
+  [Анализ контекста] as ak
+  [Машинный перевод] as mt
+  [Расширенная обработка NLP] as ml_0
+  [Обучение с подкреплением] as ml_1
+  [Анализ контекста] as ml_2
+  [Мультимодальный анализ] as ml_3
+  [Обучение с учителем и без] as ml_4
+
+  web --> server
+  server --> data
+  server --> ml
+  server --> db
+  data --> nlp
+  data --> data_0
+  data --> data_1
+  data --> data_2
+  data --> data_3
+  ml --> nlp
+  ml --> db
+  ml --> vis
+  ml --> ml_0
+  ml --> ml_1
+  ml --> ml_2
+  ml --> ml_3
+  ml --> ml_4
+  nlp --> at
+  nlp --> asy
+  nlp --> ak
+  nlp --> mt
+}
+
+@enduml
