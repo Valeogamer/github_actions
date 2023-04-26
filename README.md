@@ -53,3 +53,34 @@ ____
 #### UML
 ____
 [UML инструмент](https://plantuml.com/ru/)
+
+#### UML EXAMPLE
+____
+> @startuml
+skinparam componentStyle rectangle
+
+package "Fake News Detections" {
+  
+  [Веб-интерфейс] as web
+  [Веб-сервер] as server
+  [Модуль обработки данных] as data
+  [Модуль машинного обучения] as ml
+  [База данных] as db
+  [Модуль обработки NLP] as nlp
+  [Модуль визуализации] as vis
+  
+  web --> server
+  server --> data
+  server --> ml
+  server --> db
+  data --> nlp
+  ml --> nlp
+  ml --> db
+  ml --> vis
+  
+  
+}
+
+@enduml
+
+
